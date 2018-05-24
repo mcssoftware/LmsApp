@@ -1,0 +1,79 @@
+@mixin grid {
+    @include ms-Grid;
+}
+
+@mixin grid-row {
+    @include ms-Grid-row;
+}
+
+@mixin grid-col {
+    @include ms-Grid-col;
+}
+
+
+
+@mixin grids {
+  .row {
+      @include grid-row;
+    }
+    .column1 {
+      @include sm12;
+      @include md1;
+    }
+    .column2 {
+      @include sm12;
+      @include md2;
+    }
+    .column3 {
+      @include sm12;
+      @include md3;
+    }
+    .column4 {
+      @include sm12;
+      @include md4;
+    }
+    .column5 {
+        @include sm12;
+      @include md5;
+    }
+    .column6 {
+      @include sm12;
+      @include md6;
+    }
+    .column7 {
+      @include sm12;
+      @include md7;
+    }
+    .column8 {
+      @include sm12;
+      @include md8;
+    }
+    .column9 {
+      @include sm12;
+      @include md9;
+    }
+    .column10 {
+      @include sm12;
+      @include md10;
+    }
+    .column11 {
+      @include sm12;
+      @include md11;
+    }
+    .column12 {
+      @include sm12;
+      @include md12;
+    }
+
+    .column {
+        padding-left: 8px;
+        padding-right: 8px;
+        float: left;
+        box-sizing: border-box;
+    }
+    @for $i from 1 through 12 {
+      .column#{$i} {
+          @extend .column;
+      }
+    }
+}

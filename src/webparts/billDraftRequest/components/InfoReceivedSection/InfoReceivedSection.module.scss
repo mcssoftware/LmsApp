@@ -1,0 +1,15 @@
+@import '../../../../sass/LmsCore';
+.inforeceivedmethod {
+  .container {
+  @include container(1);
+  }
+  @include grids;
+  .inlineflex {
+  @include inlineFlex; 
+  }
+  @include errorMessage; 
+  :global .ms-TextField {
+    padding: 0 15px;
+    margin-left: -9px;
+  }
+}

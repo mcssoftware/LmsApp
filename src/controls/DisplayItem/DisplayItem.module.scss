@@ -1,0 +1,23 @@
+@import '../../sass/LmsCore';
+.displayItem {
+  //border: 1px $ms-color-neutralTertiaryAlt solid;
+  .row {
+    @include grid-row;
+  }
+  .column {
+    @include grid-col;
+    padding:5px;
+  }
+  .propertyName {
+    @include fontSize-m;
+    @include fontWeight-semibold;
+    @include fontColor-neutralDark;
+    //font-size: 14px;
+    margin-left: 26px;
+
+  }
+  .propertyValue {
+    @include fontSize-m;
+    @include fontWeight-regular;
+  }
+}

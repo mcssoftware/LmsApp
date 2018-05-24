@@ -1,0 +1,28 @@
+@import '../../../sass/LmsCore';
+
+.createEngrossedBill {
+  padding:0 8px;
+  @include grids;
+
+  :global .ms-Label {
+    display: inline-block;
+  }
+
+  p {
+    margin:0;
+  }
+  
+  :global .ms-TextField-wrapper {
+    .ms-Label {
+      font-weight: 600;
+    }
+  }
+ 
+  .button {
+   @include button;
+  }
+
+  .hideDefaultButtonDiv{
+    display: none;
+  }
+}

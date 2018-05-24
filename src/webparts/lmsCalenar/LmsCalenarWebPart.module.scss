@@ -1,0 +1,128 @@
+@import '../../sass/LmsCore';
+
+.lmsCalenar {
+  background: white;
+  .calendarOrder, .calendarExport {
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+
+  .webpartheader, .webpartheader2 {
+    text-align: center;
+    padding: 15px;
+    @include ms-fontColor-white;
+    background-color: $ms-color-themeDark;
+  }
+
+  .webpartheader2 {
+    background-color: #0078d7;
+  }
+
+  .headerText {
+    text-align: left;
+    @include ms-fontSize-l; // @include ms-fontWeight-regular;
+    float: none; //grid col sets float to left
+  }
+
+  .content {
+    @include content;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .container {
+   @include container;
+  }
+
+  @include grids;
+
+  .button {
+   @include button;
+  }
+
+  .collapseBtn {
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    text-align: center;
+    float:right;
+    text-align: center;
+    float: right;
+    padding: 3px;
+    min-width: 0;
+    top: 0;
+    width: 30px;
+    font-weight: 700;
+    border: gray;
+    cursor: pointer;
+  }
+
+  .panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  }
+
+  .panel-default {
+    border-color: #ddd;
+  }
+
+  .panelDefault>.panelHeading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    padding: 5px 3px;
+  }
+
+  .ms-WPBody h3 {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 120%;
+    color: inherit;
+    line-height: 1.1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .panelBody {
+    padding: 3px;
+  }
+
+  .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+  }
+
+  tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+  }
+
+  .table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    padding: 8px;
+    line-height: 1.42857143;
+    border-top: 1px solid #ddd;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  :global .ui-state-highlight{
+    height: 50px;
+  }
+}

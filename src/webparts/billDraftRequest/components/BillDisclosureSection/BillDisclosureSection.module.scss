@@ -1,0 +1,10 @@
+@import '../../../../sass/LmsCore';
+.billdisclosuresection {
+  .container {
+  @include container(1);
+  }
+  @include grids;
+  .inlineflex {
+  @include inlineFlex;
+  }
+}

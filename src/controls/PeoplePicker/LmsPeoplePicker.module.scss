@@ -1,0 +1,61 @@
+@import '../../sass/LmsCore';
+.lmspicker {
+  display: block;
+  padding: 0 8px;
+  .lmspickerWrapper {
+    font-weight: 600;
+    display: inherit;
+  }
+  .lmspickerLabel {
+    cursor: default;
+    font-weight: 600;
+  }
+  :global .ms-PickerPersona-container {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.lmspickerFieldGroup {
+  box-shadow: none;
+  margin: 0;
+  padding: 0 8px;
+  border: 1px solid #a6a6a6;
+  background: #ffffff;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  position: relative;
+  .lmsPeoplePicker {
+    :global .ms-BasePicker-input {
+      height: 30px;
+      margin-top: 0;
+      margin-bottom: 0;
+      border: none;
+      padding: 0;
+    }
+    :global .ms-TextField-field {
+      height: 30px !important;
+      &:active,
+      &:focus,
+      &:hover {
+        outline: 0
+      }
+    }
+    :global .ms-BasePicker-text {
+      border: none !important;
+    }
+    // :global .ms-PickerPersona-container {
+    //   background-color: rgb(0, 120, 215);
+    // }
+    :global .ms-PickerItem-removeButton {
+      min-width: 28px;
+    }
+    // :global .ms-Persona-primaryText {
+    //   color: #ffffff !important;
+    // }
+  }
+}

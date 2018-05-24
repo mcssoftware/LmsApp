@@ -1,0 +1,8 @@
+@import '../../../sass/LmsCore';
+.assignChapterNumber {
+  @include grids;
+
+  .button {
+   @include button;
+  }
+}

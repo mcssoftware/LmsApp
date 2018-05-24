@@ -1,0 +1,48 @@
+@import '../../../sass/LmsCore';
+.amendmentForm {
+  .container {
+    @include container;
+  }
+
+  .content {
+    padding-left: 8px;
+    padding-right: 8px;
+    @include content;
+  }
+
+  @include grids;
+  :global .ms-Label {
+    font-weight: 600;
+  }
+
+  .header,
+  .description {
+    display: inline;
+  }
+  
+  .description {
+    font-weight: 400;
+  }
+
+  .split button {
+    margin-top: 28px;
+  }
+
+  :global .ms-Button {
+    padding: 10px;
+  }
+
+  .button {
+    @include button;
+  }
+
+  .buttonlink {
+    @include buttonLink;
+  }
+
+  .nopadding {
+    padding: 0;
+  }
+
+  @include noDoubleBorderInput;
+}

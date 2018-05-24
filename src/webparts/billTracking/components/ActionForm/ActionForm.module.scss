@@ -1,0 +1,37 @@
+@import '../../../../sass/LmsCore';
+.actionForm {
+  .container {
+    @include container;
+  }
+  .content {
+    @include content;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  @include grids;
+  .columnMessage {
+    @include grid-col;
+    @include lg9;
+    @include lgPush3;
+    @include sm12;
+    margin-top:5px;
+    :global .ms-TextField-fieldGroup {
+      border:none;
+    }
+  }
+   :global .ms-Label {
+    display: inline-block;
+  }
+  
+  p {
+    text-align: center;
+  }
+   :global .ms-TextField-wrapper {
+    .ms-Label {
+      font-weight: 600;
+    }
+  }
+  .button {
+    @include button;
+  }
+}

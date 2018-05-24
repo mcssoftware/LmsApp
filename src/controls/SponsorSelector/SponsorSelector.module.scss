@@ -1,0 +1,21 @@
+@import '../../sass/LmsCore';
+.sponsorselector {
+  @include grids;
+  .inlineflex {
+  @include inlineFlex;
+  }
+  .ddcontainer {
+    padding: 0 8px;
+  }
+  .error {
+    :global .ms-TextField-fieldGroup {
+      border-color: #a80000;
+    }
+  }
+  .reactSelect > div {
+      border-radius: 0;
+  }
+  .error > div {
+    border-color: #a80000;
+  }
+}

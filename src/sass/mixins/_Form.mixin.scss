@@ -1,0 +1,38 @@
+@mixin errorMessage {
+    .errorMessage {
+        color: #a80000;
+      }
+      .errorMessage::before {
+        content: '* ';
+      }
+}
+
+@mixin noDoubleBorderInput {
+  :global .ms-TextField-field {
+    border:none;
+  }
+}
+
+@mixin fieldPadding {
+  .fieldPadding {
+  padding-left: 8px;
+  padding-right: 8px;
+  }
+}
+
+@mixin inlineFlex {
+    display: inline-block;
+    :global .ms-ChoiceField {
+      display: inline-block;
+      margin-left: 6px;
+      margin-top: -2px;
+    }
+    :global .ms-ChoiceFieldGroup {
+      display:inline-block;
+      >.ms-Label {
+        font-weight: 600;
+        padding:5px 8px;
+        display:block;
+        }
+    }
+}

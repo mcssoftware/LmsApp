@@ -1,0 +1,12 @@
+ @mixin title {
+    @include font-xl;
+    @include fontColor-white;
+  }
+@mixin subTitle {
+    @include font-l;
+    @include fontColor-white;
+  }
+  @mixin description {
+    @include font-l;
+    @include fontColor-white;
+  }

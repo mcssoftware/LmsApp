@@ -1,0 +1,12 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "MCS LMS",
+    "id": "13cc8874-73a5-4f2d-8134-e42a492361c4",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/mcs-lms.sppkg"
+  }
+}

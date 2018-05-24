@@ -1,0 +1,17 @@
+@import '../../sass/LmsCore';
+.webpartheader {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  @include ms-fontColor-white;
+  background-color: $ms-color-themeDark;
+  .row {
+    @include grid-row;
+    margin: 0px !important;
+  }
+  .headerText {
+    @include grid-col;
+    @include fontSize-l; // @include ms-fontWeight-regular;
+    float: none; //grid col sets float to left
+  }
+}

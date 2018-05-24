@@ -1,0 +1,112 @@
+// Border radius.
+@mixin border-radius($radius: 5px) {
+    @include ms-border-radius($radius);
+  }
+  
+  // Drop shadow.
+  @mixin drop-shadow($x-offset: 0, $y-offset: 0, $blur: 5px, $spread: 0, $alpha: 0.4) {
+      @include ms-drop-shadow($x-offset, $y-offset,$blur,$spread,$alpha );
+  }
+  
+  // Background gradient.
+  @mixin background-gradient($origin, $start, $start-location, $stop, $stop-location) {
+    @include ms-background-gradient($origin: left, $start: #000, $start-location: 0%, $stop: #FFF, $stop-location: 100%);
+  }
+  
+  // Rotation.
+  @mixin rotate($degrees) {
+      @include ms-rotate($degrees);
+  }
+  
+  // Prevents user selection of text elements.
+  @mixin user-select ($val) {
+      @include ms-user-select($val);
+  }
+  
+  // Prevents the text within a block element from wrapping to second line.
+  @mixin no-wrap() {
+      @include ms-no-wrap();
+  }
+  
+  // Flexbox
+  @mixin ms-flex-box() {
+      @include ms-flex-box();
+  }
+  
+  @mixin ms-alignItems($mode) {
+      @include ms-alignItems($mode);
+  }
+  
+  // Base/wrapper component to set typography throughout the app.
+  @mixin ms-Fabric {
+      @include ms-Fabric();
+  }
+  
+  // Set the font-family to 'inherit' for elements where the browser
+  // styles commonly conflict with the font-family that we want.
+  @mixin inherit-font-family() {
+      @include ms-inherit-font-family();
+  }
+  
+  // Overrides the browser's default focus outline style.
+  @mixin focus-outline($inset: 0, $color: $ms-focus-border-color) {
+    @include ms-focus-outline($inset,$color);
+  }
+  
+  // Simulates a focus outline using an absolutely-positioned pseudo-element.
+  @mixin focus-border($inset: 0, $color: $ms-focus-border-color) {
+      @include ms-focus-border($inset, $color);
+  }
+  
+  // The best box is a border box.
+  @mixin borderBox {
+      @include ms-borderBox;
+  }
+  
+  // For setting the border base width
+  @mixin borderBase {
+      @include ms-borderBase;
+  }
+  
+  // Ensures the block expands to the full height to enclose its floated childen.
+  @mixin clearfix {
+      @include ms-clearfix;
+  }
+  
+  // Basic border-box, margin, and padding reset.
+  @mixin ms-normalize {
+    @include ms-normalize;
+  }
+  
+  // Generate text alignment classes, such as .ms-textAlignLeft 
+  // @param [variable list] $alignments
+  @mixin textAlign($alignments...) {
+      @include ms-textAlign();
+  }
+  
+  // To hide content while still making it readable by screen readers (Accessibility)
+  @mixin screenReaderOnly {
+      @include ms-screenReaderOnly;
+  }
+  
+  // To add truncation with ellipsis
+  @mixin textTruncate {
+      @include ms-textTruncate;
+  }
+  
+  // To disable text wrapping
+  @mixin noWrap {
+      @include ms-noWrap; 
+  }
+  
+  // Replace or remove a portion of a string.
+  @function string-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
+    
+    @if $index {
+      @return str-slice($string, 1, $index - 1) + $replace + string-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+    
+    @return $string;
+  }
+  

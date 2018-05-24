@@ -1,0 +1,12 @@
+@mixin label
+{
+    font-weight: $ms-font-weight-semibold !important;
+    font-size: $ms-font-size-m;
+    height: 32px;
+    line-height: 32px;
+   // margin: 0 4px;
+    vertical-align: top;
+    display: inline-block !important;
+    color: #000000;
+}
+

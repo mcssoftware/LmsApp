@@ -1,0 +1,23 @@
+@import '../../sass/LmsCore';
+.taskInformation {
+  padding: 0 8px;
+ @include grids;
+  :global .ms-Label {
+    display: inline-block;
+  }
+  .header {
+    font-weight: 600;
+    padding-right: 15px;
+  }
+  p {
+    margin: 0;
+  }
+  :global .ms-TextField-wrapper {
+    .ms-Label {
+      font-weight: 600;
+    }
+  }
+  .saveCommentsButton {
+    margin: 5px 0;
+  }
+}

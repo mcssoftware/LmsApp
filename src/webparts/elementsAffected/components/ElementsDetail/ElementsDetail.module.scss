@@ -1,0 +1,45 @@
+@import '../../../../sass/LmsCore';
+.elementsAffected {
+  .container {
+    @include container;
+    }
+  .row {
+    @include ms-Grid-row;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .separator {
+    &:after {
+      background-color: #a4a897;
+      border-radius: 3px;
+      content: '';
+      display: block;
+      height: 2px;
+      margin: 8px 0;
+    }
+  }
+  .searchColumn {
+    @include ms-Grid-col;
+    @include ms-lg3;
+    @include ms-md4;
+    @include ms-sm6;
+  }
+  .searchBox {
+    :global .ms-TextField-wrapper {
+      .ms-Label {
+        font-size: 15px;
+        float: left;
+        margin-right: 15px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  :global .ms-SelectionZone {
+    overflow-y: auto;
+    max-height: 35vh;
+    @media screen and (max-width: 575px) {
+      max-height: 90vh;
+    }
+  }
+}

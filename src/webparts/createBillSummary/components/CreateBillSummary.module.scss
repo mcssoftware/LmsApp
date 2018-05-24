@@ -1,0 +1,41 @@
+@import '../../../sass/LmsCore';
+
+.createBillSummary {
+  .container {
+    margin: 0px auto;
+  }
+  .column12 {
+    @include grid-col;
+    @include sm12;
+  }
+  .row {
+    @include grid-row;
+  }
+  .column {
+    @include grid-col;
+    @include lg10;
+    @include xl8;
+    @include xlPush2;
+    @include lgPush1;
+  }
+  .column3 {
+    @include grid-col;
+    @include sm12;
+    @include lg3;
+  }
+  .title {
+    @include title;
+  }
+  .subTitle {
+    @include subTitle;
+  }
+  .description {
+    @include description;
+  }
+  .button {
+   @include button;
+  }
+  .section {
+      padding-left: 9px;
+  }
+}

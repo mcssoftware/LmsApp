@@ -1,0 +1,22 @@
+@import '../../../../sass/LmsCore';
+.billTracking {
+  padding: 0 8px;
+  .grid {
+    @include grid;
+  }
+  @include grids;
+   :global .ms-Label {
+    display: inline-block;
+  }
+  p {
+    margin: 0;
+  }
+   :global .ms-TextField-wrapper {
+    .ms-Label {
+      font-weight: 600;
+    }
+  }
+  .button {
+    @include button;
+  }
+}

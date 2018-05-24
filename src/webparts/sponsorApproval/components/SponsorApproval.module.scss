@@ -1,0 +1,8 @@
+@import '../../../sass/LmsCore';
+
+.sponsorApproval {
+  @include grids;
+  .button {
+   @include button;
+  }
+}

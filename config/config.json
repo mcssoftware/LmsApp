@@ -1,0 +1,238 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "assign-chapter-number-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/assignChapterNumber/AssignChapterNumberWebPart.js",
+          "manifest": "./src/webparts/assignChapterNumber/AssignChapterNumberWebPart.manifest.json"
+        }
+      ]
+    },
+    "assign-enroll-number-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/assignEnrollNumber/AssignEnrollNumberWebPart.js",
+          "manifest": "./src/webparts/assignEnrollNumber/AssignEnrollNumberWebPart.manifest.json"
+        }
+      ]
+    },
+    "assign-fiscal-analyst-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/assignFiscalAnalyst/AssignFiscalAnalystWebPart.js",
+          "manifest": "./src/webparts/assignFiscalAnalyst/AssignFiscalAnalystWebPart.manifest.json"
+        }
+      ]
+    },
+    "bill-draft-request-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/billDraftRequest/BillDraftRequestWebPart.js",
+          "manifest": "./src/webparts/billDraftRequest/BillDraftRequestWebPart.manifest.json"
+        }
+      ]
+    },
+    "bill-filter-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/billFilter/BillFilterWebPart.js",
+          "manifest": "./src/webparts/billFilter/BillFilterWebPart.manifest.json"
+        }
+      ]
+    },
+    "bill-information-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/billInformation/BillInformationWebPart.js",
+          "manifest": "./src/webparts/billInformation/BillInformationWebPart.manifest.json"
+        }
+      ]
+    },
+    "bill-tracking-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/billTracking/BillTrackingWebPart.js",
+          "manifest": "./src/webparts/billTracking/BillTrackingWebPart.manifest.json"
+        }
+      ]
+    },
+    "amendment-form-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/amendmentForm/AmendmentFormWebPart.js",
+          "manifest": "./src/webparts/amendmentForm/AmendmentFormWebPart.manifest.json"
+        }
+      ]
+    },
+    "create-engrossed-bill-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/createEngrossedBill/CreateEngrossedBillWebPart.js",
+          "manifest": "./src/webparts/createEngrossedBill/CreateEngrossedBillWebPart.manifest.json"
+        }
+      ]
+    },
+    "create-formal-draft-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/createFormalDraft/CreateFormalDraftWebPart.js",
+          "manifest": "./src/webparts/createFormalDraft/CreateFormalDraftWebPart.manifest.json"
+        }
+      ]
+    },
+    "create-numbered-bill-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/createNumberedBill/CreateNumberedBillWebPart.js",
+          "manifest": "./src/webparts/createNumberedBill/CreateNumberedBillWebPart.manifest.json"
+        }
+      ]
+    },
+    "create-session-law-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/createSessionLaw/CreateSessionLawWebPart.js",
+          "manifest": "./src/webparts/createSessionLaw/CreateSessionLawWebPart.manifest.json"
+        }
+      ]
+    },
+    "drafting-folder-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/draftingFolder/DraftingFolderWebPart.js",
+          "manifest": "./src/webparts/draftingFolder/DraftingFolderWebPart.manifest.json"
+        }
+      ]
+    },
+    "elements-affected-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/elementsAffected/ElementsAffectedWebPart.js",
+          "manifest": "./src/webparts/elementsAffected/ElementsAffectedWebPart.manifest.json"
+        }
+      ]
+    },
+    "jcc-assignment-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/jccAssignment/JccAssignmentWebPart.js",
+          "manifest": "./src/webparts/jccAssignment/JccAssignmentWebPart.manifest.json"
+        }
+      ]
+    },
+    "lms-task-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/lmsTask/LmsTaskWebPart.js",
+          "manifest": "./src/webparts/lmsTask/LmsTaskWebPart.manifest.json"
+        }
+      ]
+    },
+    "custom-list-view-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/customListView/CustomListViewWebPart.js",
+          "manifest": "./src/webparts/customListView/CustomListViewWebPart.manifest.json"
+        }
+      ]
+    },
+    "fiscal-impact-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/fiscalImpact/FiscalImpactWebPart.js",
+          "manifest": "./src/webparts/fiscalImpact/FiscalImpactWebPart.manifest.json"
+        }
+      ]
+    },
+    "fiscal-note-directive-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/fiscalNoteDirective/FiscalNoteDirectiveWebPart.js",
+          "manifest": "./src/webparts/fiscalNoteDirective/FiscalNoteDirectiveWebPart.manifest.json"
+        }
+      ]
+    },
+    "fiscal-note-form-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/fiscalNoteForm/FiscalNoteFormWebPart.js",
+          "manifest": "./src/webparts/fiscalNoteForm/FiscalNoteFormWebPart.manifest.json"
+        }
+      ]
+    },
+    "updategram-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/updategram/UpdategramWebPart.js",
+          "manifest": "./src/webparts/updategram/UpdategramWebPart.manifest.json"
+        }
+      ]
+    },
+    "create-bill-summary-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/createBillSummary/CreateBillSummaryWebPart.js",
+          "manifest": "./src/webparts/createBillSummary/CreateBillSummaryWebPart.manifest.json"
+        }
+      ]
+    },
+    "sponsor-approval-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/sponsorApproval/SponsorApprovalWebPart.js",
+          "manifest": "./src/webparts/sponsorApproval/SponsorApprovalWebPart.manifest.json"
+        }
+      ]
+    },
+    "lms-calenar-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/lmsCalenar/LmsCalenarWebPart.js",
+          "manifest": "./src/webparts/lmsCalenar/LmsCalenarWebPart.manifest.json"
+        }
+      ]
+    },
+    "updategram-form-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/updategramForm/UpdategramFormWebPart.js",
+          "manifest": "./src/webparts/updategramForm/UpdategramFormWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "sp-pnp-js": "https://mcsspfx.blob.core.windows.net/mcslmsapp/sp-pnp-js/dist/pnp.min.js",
+    "rx-lite": "https://mcsspfx.blob.core.windows.net/mcslmsapp/rx-lite/rx.lite.js",
+    "office-ui-fabric-react": "https://mcsspfx.blob.core.windows.net/mcslmsapp/office-ui-fabric-react-bundle/dist/office-ui-fabric-react-bundle.js"
+  },
+  "localizedResources": {
+    "AssignChapterNumberWebPartStrings": "lib/webparts/assignChapterNumber/loc/{locale}.js",
+    "AssignEnrollNumberWebPartStrings": "lib/webparts/assignEnrollNumber/loc/{locale}.js",
+    "AssignFiscalAnalystWebPartStrings": "lib/webparts/assignFiscalAnalyst/loc/{locale}.js",
+    "BillDraftRequestWebPartStrings": "lib/webparts/billDraftRequest/loc/{locale}.js",
+    "BillFilterWebPartStrings": "lib/webparts/billFilter/loc/{locale}.js",
+    "BillInformationWebPartStrings": "lib/webparts/billInformation/loc/{locale}.js",
+    "BillTrackingWebPartStrings": "lib/webparts/billTracking/loc/{locale}.js",
+    "AmendmentFormWebPartStrings": "lib/webparts/amendmentForm/loc/{locale}.js",
+    "CreateEngrossedBillWebPartStrings": "lib/webparts/createEngrossedBill/loc/{locale}.js",
+    "CreateFormalDraftWebPartStrings": "lib/webparts/createFormalDraft/loc/{locale}.js",
+    "CreateNumberedBillWebPartStrings": "lib/webparts/createNumberedBill/loc/{locale}.js",
+    "CreateSessionLawWebPartStrings": "lib/webparts/createSessionLaw/loc/{locale}.js",
+    "DraftingFolderWebPartStrings": "lib/webparts/draftingFolder/loc/{locale}.js",
+    "ElementsAffectedWebPartStrings": "lib/webparts/elementsAffected/loc/{locale}.js",
+    "JccAssignmentWebPartStrings": "lib/webparts/jccAssignment/loc/{locale}.js",
+    "LmsTaskWebPartStrings": "lib/webparts/lmsTask/loc/{locale}.js",
+    "CustomListViewWebPartStrings": "lib/webparts/customListView/loc/{locale}.js",
+    "FiscalImpactWebPartStrings": "lib/webparts/fiscalImpact/loc/{locale}.js",
+    "FiscalNoteDirectiveWebPartStrings": "lib/webparts/fiscalNoteDirective/loc/{locale}.js",
+    "FiscalNoteFormWebPartStrings": "lib/webparts/fiscalNoteForm/loc/{locale}.js",
+    "UpdategramWebPartStrings": "lib/webparts/updategram/loc/{locale}.js",
+    "CreateBillSummaryWebPartStrings": "lib/webparts/createBillSummary/loc/{locale}.js",
+    "SponsorApprovalWebPartStrings": "lib/webparts/sponsorApproval/loc/{locale}.js",
+    "LmsCalenarWebPartStrings": "lib/webparts/lmsCalenar/loc/{locale}.js",
+    "UpdategramFormWebPartStrings": "lib/webparts/updategramForm/loc/{locale}.js"
+  }
+}

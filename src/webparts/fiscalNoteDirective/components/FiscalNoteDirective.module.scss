@@ -1,0 +1,106 @@
+@import '../../../sass/LmsCore';
+.fiscalNoteDirective {
+  :global .ms-Label {
+    display: inline;
+  }
+  .container {
+   @include container;
+  }
+  :global .ms-ChoiceFieldGroup,
+  :global .ms-TextField-wrapper,
+  :global .lmspickerWrapper,
+  :global .ms-Dropdown-container {
+    >.ms-Label {
+      font-weight: 600;
+    }
+  }
+  :global .ms-Dropdown-container {
+    padding-left: 7px;
+  }
+  
+  .column12NoPadding {
+    @include grid-col;
+    @include sm12;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .column4Margin{
+    @include grid-col;
+    @include sm12;
+    @include lg4;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: -18px;
+  }
+ 
+  .column6DipositionOther {
+    @include grid-col;
+    @include sm12;
+    @include lg6;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 45px;
+  }
+  .fieldpadding {
+    padding: 0 8px;
+  }
+  @include grids;
+  .inlineflex {
+   @include inlineFlex;
+  }
+
+  .h4Label {
+    margin-left: 9px;
+    margin-bottom: 5px;
+  }
+  .inlineflexInline {
+    :global .ms-Label {
+      margin-left: 2px;
+      float: left;
+    }
+  }
+  .header {
+    font-weight: bold;
+    padding-right: 15px;
+    padding-left: 9px
+  }
+  .explainFiscal {
+    margin-left: -28px;
+    margin-top: -11px;
+    padding: 0 8px;
+  }
+  .button {
+    @include buttonLabel;
+    @include button;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .fieldset {
+    border: none;
+    box-shadow: 0 0 1px 0 silver;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .fieldset .fieldset {
+    margin: 0;
+  }
+  .legend {
+    color: cornflowerblue;
+    background: white;
+    border-bottom: none;
+    margin: 5px;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .fiscalRadio {
+    margin-left: 7px;
+  }
+  .inlineInput label {
+    clear: both;
+    float: left;
+    margin-right: 15px;
+  }
+}

@@ -1,0 +1,10 @@
+@mixin textBoxColumn {
+    @include Grid-col;
+    @include sm8;
+  }
+
+@mixin textboxPlaceholder{
+    @include input-placeholder;
+}
+
+

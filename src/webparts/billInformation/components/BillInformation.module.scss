@@ -1,0 +1,15 @@
+@import '../../../sass/LmsCore';
+.billInformation {
+  .container {
+    @include container;
+  }
+  @include grids;
+  
+  .billNumberDisplayItem {
+    float: left;    
+  }
+  .actionButton {
+    color: #0078d7;
+    font-style: italic;
+  }
+}

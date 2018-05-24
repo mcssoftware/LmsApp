@@ -1,0 +1,41 @@
+@import '../../../sass/LmsCore';
+.billFilter {
+  .container {
+    @include container;
+  }
+  .content {
+    @include content;
+  }
+  @include noDoubleBorderInput;
+
+  .nogutter {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  @include grids;
+  .inlineflex {
+    @include inlineFlex;
+  }
+
+  .linkcolumn {
+    text-align: right;
+    margin-top: 8px;
+    padding-right: 8px;
+  }
+
+  .textBox {
+    @include grid-col;
+    @include sm8;
+  }
+
+  .button {
+    @include button;
+    }
+
+  .searchButton {
+      margin-top: 27px;
+      margin-left: -8px;
+  }
+  
+}

@@ -1,0 +1,21 @@
+@import '../../../sass/LmsCore';
+.draftingFolder {
+  .container {
+    @include container;
+  }
+  .content {
+    @include content;
+  }
+  @include grids;
+  .button {
+    @include button;
+  }
+  .dialog {
+    :global .ms-Dialog-header {
+      background-color: #005a9e;
+    }
+    :global .ms-Dialog-title {
+      color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import '../../../sass/LmsCore';
+
+.jccAssignment {
+  .borderedTable {
+    margin-top: 8px;
+    margin-bottom:8px;
+    border: 1px solid gray;
+    height: 300px;
+    overflow: auto;
+  }
+
+  .content {
+    @include content;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+ @include grids;
+
+  :global .ms-Label {
+    display: inline-block;
+  }
+
+  p {
+    margin:0;
+  }
+  
+  :global .ms-TextField-wrapper {
+    .ms-Label {
+      font-weight: 600;
+    }
+  }
+ 
+  .button {
+   @include button;
+  }
+}

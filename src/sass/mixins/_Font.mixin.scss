@@ -1,0 +1,326 @@
+@mixin font-face($font-family-name, $cdn-folder, $cdn-font-name: 'segoeui') {
+    @include ms-font-face($font-family-name, $cdn-folder, $cdn-font-name);
+  }
+  
+  // Generate overrides to set font-family based on the lang attribute.
+  @mixin font-family-language-override($language-code, $font-family) {
+    @include ms-font-family-language-override($language-code, $font-family);
+  }
+  
+ 
+  // Extra-Extra-Large
+  @mixin font-xxl {
+    @include ms-font-xxl;
+  }
+  
+  // Extra-Large Styles
+  @mixin font-xl-plus {
+    @include ms-font-xl-plus;
+  }
+  
+  // Extra-Large Styles
+  @mixin font-xl {
+    @include ms-font-xl;
+  }
+  
+  // Large Styles
+  @mixin font-l {
+    @include ms-font-l;
+  }
+  
+  // Medium Plus Styles
+  @mixin font-m-plus {
+    @include ms-font-m-plus;
+  }
+  
+  // Medium Styles
+  @mixin font-m {
+    @include ms-font-m;
+  }
+  
+  // Small Plus Styles
+  @mixin font-s-plus {
+    @include ms-font-s-plus;
+  }
+  
+  // Small Styles
+  @mixin font-s {
+    @include ms-font-s;
+  }
+  
+  // XS Styles
+  @mixin font-xs {
+    @include ms-font-xs;
+  }
+  
+  // Font weights
+  @mixin fontWeight-light {
+    @include ms-fontWeight-light;
+  }
+  
+  @mixin fontWeight-semilight {
+    @include ms-fontWeight-semilight;
+  }
+  
+  @mixin fontWeight-regular {
+    @include ms-fontWeight-regular;
+  }
+  
+  @mixin fontWeight-semibold {
+    @include ms-fontWeight-semibold;
+  }
+  
+  @mixin fontWeight-bold {
+    @include ms-fontWeight-bold;
+  }
+  
+  // Font sizes
+  @mixin fontSize-su {
+    @include ms-fontSize-su;
+  }
+  
+  @mixin fontSize-xxl {
+    @include ms-fontSize-xxl;
+  }
+  
+  @mixin fontSize-xlPlus {
+    @include ms-fontSize-xlPlus;
+  }
+  
+  @mixin fontSize-xl {
+    @include ms-fontSize-xl;
+  }
+  
+  @mixin fontSize-l {
+    @include ms-fontSize-l;
+  }
+  
+  @mixin fontSize-mPlus {
+    @include ms-fontSize-mPlus;
+  }
+  
+  @mixin fontSize-m {
+    @include ms-fontSize-m;
+  }
+  
+  @mixin fontSize-sPlus {
+    @include ms-fontSize-sPlus;
+  }
+  
+  @mixin fontSize-s {
+    @include ms-fontSize-s;
+  }
+  
+  @mixin fontSize-xs {
+    @include ms-fontSize-xs;
+  }
+  
+  @mixin fontSize-mi {
+    @include ms-fontSize-mi;
+  }
+  
+  // Theme colors
+//   @mixin fontColor-themeDarker {
+//     @include ms-fontColor-themeDarker;
+//   }
+  
+//   @mixin fontColor-themeDark {
+//     @include ms-fontColor-themeDark;
+//   }
+  
+//   @mixin fontColor-themeDarkAlt {
+//     @include ms-fontColor-themeDarkAlt;
+//   }
+  
+//   @mixin fontColor-themePrimary {
+//     @include ms-fontColor-themePrimary;
+//   }
+  
+//   @mixin fontColor-themeSecondary {
+//     @include ms-fontColor-themeSecondary;
+//   }
+  
+//   @mixin fontColor-themeTertiary {
+//     @include ms-fontColor-themeTertiary;
+//   }
+  
+//   @mixin fontColor-themeLight {
+//     @include ms-fontColor-themeLight;
+//   }
+  
+//   @mixin fontColor-themeLighter {
+//     @include ms-fontColor-themeLighter;
+//   }
+  
+//   @mixin fontColor-themeLighterAlt {
+//     @include ms-fontColor-themeLighterAlt;
+//   }
+  
+  
+  // Neutral colors
+  @mixin fontColor-black {
+    @include ms-fontColor-black;
+  }
+  
+  @mixin fontColor-neutralDark {
+    @include ms-fontColor-neutralDark;
+  }
+  
+  @mixin fontColor-neutralPrimary {
+    @include ms-fontColor-neutralPrimary;
+  }
+  
+  @mixin fontColor-neutralPrimaryAlt {
+    @include ms-fontColor-neutralPrimaryAlt;
+  }
+  
+  @mixin fontColor-neutralSecondary {
+   @include ms-fontColor-neutralSecondary;
+  }
+  
+  @mixin fontColor-neutralSecondaryAlt {
+    @include ms-fontColor-neutralSecondaryAlt;
+  }
+  
+  @mixin fontColor-neutralTertiary {
+    @include ms-fontColor-neutralTertiary;
+  }
+  
+  @mixin fontColor-neutralTertiaryAlt {
+    @include ms-fontColor-neutralTertiaryAlt;
+  }
+  
+  @mixin fontColor-neutralLight {
+    @include ms-fontColor-neutralLight;
+  }
+  
+  @mixin fontColor-neutralLighter {
+    @include ms-fontColor-neutralLighter;
+  }
+  
+  @mixin fontColor-neutralLighterAlt {
+    @include ms-fontColor-neutralLighterAlt;
+  }
+  
+  @mixin fontColor-white {
+    @include ms-fontColor-white;
+  }
+  
+  // Brand and accent colors
+  @mixin fontColor-yellow {
+    @include ms-fontColor-yellow;
+  }
+  
+  @mixin fontColor-yellowLight {
+    @include ms-fontColor-yellowLight;
+  }
+  
+  @mixin fontColor-orange {
+    @include ms-fontColor-orange;
+  }
+  
+  @mixin fontColor-orangeLight {
+    @include ms-fontColor-orangeLight;
+  }
+  
+  @mixin fontColor-orangeLighter {
+    @include ms-fontColor-orangeLighter;
+  }
+  
+  @mixin fontColor-redDark {
+    @include ms-fontColor-redDark;
+  }
+  
+  @mixin fontColor-red {
+    @include ms-fontColor-red;
+  }
+  
+  @mixin fontColor-magentaDark {
+    @include ms-fontColor-magentaDark;
+  }
+  
+  @mixin fontColor-magenta {
+    @include ms-fontColor-magenta;
+  }
+  
+  @mixin fontColor-magentaLight {
+    @include ms-fontColor-magentaLight;
+  }
+  
+  @mixin fontColor-purpleDark {
+    @include ms-fontColor-purpleDark;
+  }
+  
+  @mixin fontColor-purple {
+    @include ms-fontColor-purple;
+  }
+  
+  @mixin fontColor-purpleLight {
+    @include ms-fontColor-purpleLight;
+  }
+  
+  @mixin fontColor-blueDark {
+    @include ms-fontColor-blueDark;
+  }
+  
+  @mixin fontColor-blueMid {
+    @include ms-fontColor-blueMid;
+  }
+  
+  @mixin fontColor-blue {
+    @include ms-fontColor-blue;
+  }
+  
+  @mixin fontColor-blueLight {
+    @include ms-fontColor-blueLight;
+  }
+  
+  @mixin fontColor-tealDark {
+    @include ms-fontColor-tealDark;
+  }
+  
+  @mixin fontColor-teal {
+    @include ms-fontColor-teal;
+  }
+  
+  @mixin fontColor-tealLight {
+    @include ms-fontColor-tealLight;
+  }
+  
+  @mixin fontColor-greenDark {
+    @include ms-fontColor-greenDark;
+  }
+  
+  @mixin fontColor-green {
+    @include ms-fontColor-green;
+  }
+  
+  @mixin fontColor-greenLight {
+    @include ms-fontColor-greenLight;
+  }
+  
+  // Message colors
+  @mixin fontColor-info {
+    @include ms-fontColor-info;
+  }
+  
+  @mixin fontColor-success {
+    @include ms-fontColor-success;
+  }
+  
+  @mixin fontColor-alert { // @todo: Deprecated: Use ms-fontColor-severeWarning
+    @include ms-fontColor-alert;
+  }
+  
+  @mixin fontColor-warning {
+    @include ms-fontColor-warning;
+  }
+  
+  @mixin fontColor-severeWarning {
+    @include ms-fontColor-severeWarning;
+  }
+  
+  @mixin fontColor-error {
+    @include ms-fontColor-error;
+  }
+  

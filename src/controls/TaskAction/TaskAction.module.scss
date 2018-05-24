@@ -1,0 +1,40 @@
+@import '../../sass/LmsCore';
+
+.actionControl {
+  padding:0 8px;
+  .container {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+  .peoplePicker {
+    display:block;
+    @media (min-width:575px) {
+      display: inline-block;
+    }
+    min-width:300px;
+  }
+
+   @include grids;
+
+  .actionSelector{
+    width: 50%;
+  }
+ 
+  .ms-Dropdown-container {
+    padding-top:15px;
+  }
+
+  :global .ms-TextField-wrapper {
+    .ms-Label {
+      font-weight: 600;
+    }
+  }
+
+  .bottonGroup{
+    margin-left: -10px;
+    margin-top:5px;
+  }
+
+  .button {
+    @include button;
+  }
+}

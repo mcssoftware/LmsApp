@@ -1,0 +1,95 @@
+@import '../../../../sass/LmsCore';
+.modalContainer {
+  height: 80vh;
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  .modalHeader {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    background: #0078d7;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 100;
+    font-weight: 600;
+    padding: 0 15px;
+    min-height: 30px;
+  }
+  .modalBody {
+    -webkit-box-flex: 4;
+    -ms-flex: 4 4 auto;
+    flex: 4 4 auto;
+    padding: 5px 28px;
+    overflow-y: auto;
+  }
+  .modalFooter {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 100;
+    font-weight: 600;
+    padding: 0 10px;
+    min-height: 20px;
+  }
+  .listScrollingContainer {
+    margin: 15px 0;
+    max-height: 580px;
+  }
+  .inlineflex {
+    :global .ms-ChoiceField {
+      display: inline-block;
+      padding-left: 3px;
+      margin-left: 6px;
+      margin-top: -2px;
+      @include radioButton;
+    }
+    :global .ms-ChoiceFieldGroup {
+      display: inline-block;
+      padding-left: 1px;
+      >.ms-Label {
+        font-weight: 600;
+        padding: 5px 8px;
+        display: block;
+      }
+    }
+  }
+  .row {
+    @include grid-row;
+  }
+  .column4 {
+    @include grid-col;
+    @include sm12;
+    @include lg4;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .column8 {
+    @include grid-col;
+    @include sm12;
+    @include lg8;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}

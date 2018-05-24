@@ -1,0 +1,987 @@
+@mixin container($isMain: 0) {
+  width: 100%;
+  @if ($isMain <= 0) {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+      color: #0c0c0c;
+    }
+}
+
+@mixin content {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+  @mixin sm12 {
+   @include ms-sm12;
+  }
+  @mixin sm11 {
+   @include ms-sm11;
+  }
+  @mixin sm10 {
+    @include ms-sm10;
+  }
+  @mixin sm9 {
+    @include ms-sm9;
+  }
+  @mixin sm8 {
+    @include ms-sm8;
+  }
+  @mixin sm7 {
+    @include ms-sm7;
+  }
+  @mixin sm6 {
+   @include  ms-sm6;
+  }
+  @mixin sm5 {
+   @include ms-sm5;
+  }
+  @mixin sm4 {
+   @include ms-sm4;
+  }
+  @mixin sm3 {
+    @include ms-sm3;
+  }
+  @mixin sm2 {
+    @include ms-sm2;
+  }
+  @mixin sm1 {
+    @include ms-sm1;
+  }
+  @mixin smPull12 {
+     @include ms-smPull12;
+  }
+  @mixin smPull11 {
+    @include ms-smPull11
+  }
+  @mixin smPull10 {
+    @include ms-smPull10;
+
+  }
+  @mixin smPull9 {
+    @include ms-smPull9;
+  }
+  @mixin smPull8 {
+    @include ms-smPull8;
+  }
+  @mixin smPull7 {
+    @include ms-smPull7
+  }
+  @mixin smPull6 {
+    @include ms-smPull6;
+  }
+  @mixin smPull5 {
+    @include ms-smPull5
+  }
+  @mixin smPull4 {
+    @include ms-smPull4;
+  }
+  @mixin smPull3 {
+    @include ms-smPull3;
+  }
+  @mixin smPull2 {
+    @include ms-smPull2
+  }
+  @mixin smPull1 {
+    @include ms-smPull1
+  }
+  @mixin smPull0 {
+    @include ms-smPull0
+  }
+  @mixin smPush12 {
+    @include ms-smPush12
+  }
+  @mixin smPush12 {
+    @include ms-smPush12
+  }
+  @mixin smPush10 {
+    @include ms-smPush10;
+  }
+  @mixin smPush9 {
+    @include ms-smPush9;
+  }
+  @mixin smPush8 {
+    @include ms-left(66.66666666666666%);
+    @include ms-smPush8;
+  }
+  @mixin smPush7 {
+    @include ms-smPush7;
+
+  }
+  @mixin smPush6 {
+    @include ms-smPush6;
+  }
+  @mixin smPush5 {
+    @include ms-smPush5;
+  }
+  @mixin smPush4 {
+    @include ms-smPush4;
+  }
+  @mixin smPush3 {
+    @include ms-smPush3;
+  }
+  @mixin smPush2 {
+    @include ms-smPush2;
+  }
+  @mixin smPush1 {
+    @include ms-smPush1;
+  }
+  @mixin smPush0 {
+    @include ms-smPush0;
+  }
+  
+  // Small Offset classes 0 ... 11
+  @mixin smOffset11 {
+    @include ms-smOffset11;
+  }
+  @mixin smOffset10 {
+    @include ms-smOffset10;
+    
+  }
+  @mixin smOffset9 {
+    @include ms-smOffset9;
+  }
+  @mixin smOffset8 {
+    @include ms-smOffset8;
+  }
+  @mixin smOffset7 {
+    @include ms-smOffset7;
+  }
+  @mixin smOffset6 {
+    @include ms-smOffset6;
+  }
+  @mixin smOffset5 {
+    @include ms-smOffset5;
+  }
+  @mixin smOffset4 {
+    @include ms-smOffset4;
+  }
+  @mixin smOffset3 {
+    @include ms-smOffset3;
+  }
+  @mixin smOffset2 {
+    @include ms-smOffset2;
+  }
+  @mixin smOffset1 {
+    @include ms-smOffset1;
+  }
+  @mixin smOffset0 {
+    @include ms-smOffset0;
+  }
+  
+  // Medium Screens
+  @mixin md12 {
+    @include ms-md12;
+    }
+  
+  @mixin md11 {
+    @include ms-md11;
+    }
+  
+  @mixin md10 {
+    @include ms-md10;
+    }
+  
+  @mixin md9 {
+    @include ms-md9;
+    }
+    @mixin md8 {
+      @include ms-md8;
+    }
+    @mixin md7 {
+      @include ms-md7;
+    }
+    @mixin md6 {
+      @include ms-md6;
+    }
+    @mixin md5 {
+      @include ms-md5;
+    }
+    @mixin md4 {
+      @include ms-md4;
+    }
+    @mixin md3 {
+      @include ms-md3;
+    }
+    @mixin md2 {
+      @include ms-md2;
+    }
+    @mixin md1 {
+      @include ms-md1;
+    }
+    @mixin mdPull12 {
+      @include ms-mdPull12;
+    }
+    @mixin mdPull11 {
+      @include ms-mdPull11;
+    }
+    @mixin mdPull10 {
+      @include ms-mdPull10;
+    }
+    @mixin mdPull9 {
+      @include ms-mdPull9;
+    }
+    @mixin mdPull8 {
+      @include ms-mdPull8;
+    }
+    @mixin mdPull7 {
+      @include ms-mdPull7;
+    }
+    @mixin mdPull6 {
+      @include ms-mdPull6;
+    }
+    @mixin mdPull5 {
+      @include ms-mdPull5;
+    }
+    @mixin mdPull4 {
+      @include ms-mdPull4;
+    }
+    @mixin mdPull3 {
+      @include ms-mdPull3;
+    }
+    @mixin mdPull2 {
+      @include ms-mdPull2;
+    }
+    @mixin mdPull1 {
+      @include ms-mdPull1;
+    }
+    @mixin mdPull0 {
+      @include ms-mdPull0;
+    }
+    @mixin mdPush12 {
+      @include ms-mdPush12;
+    }
+    @mixin mdPush11 {
+      @include ms-mdPush11;
+    }
+    @mixin mdPush10 {
+      @include ms-mdPush10;
+    }
+    @mixin mdPush9 {
+      @include ms-mdPush9;
+    }
+    @mixin mdPush8 {
+      @include ms-mdPush8;
+    }
+    @mixin mdPush7 {
+      @include ms-mdPush7;
+    }
+    @mixin mdPush6 {
+      @include ms-mdPush6;
+    }
+    @mixin mdPush5 {
+      @include ms-mdPush5;
+    }
+    @mixin mdPush4 {
+      @include ms-mdPush4;
+    }
+    @mixin mdPush3 {
+      @include ms-mdPush3;
+    }
+    @mixin mdPush2 {
+      @include ms-mdPush2;
+    }
+    @mixin mdPush1 {
+      @include ms-mdPush1;
+    }
+    @mixin mdPush0 {
+      @include ms-mdPush0;
+    }
+    
+    // Medium Offset classes 0 ... 11
+    @mixin mdOffset11 {
+      @include ms-mdOffset11;
+    }
+    @mixin mdOffset10 {
+      @include ms-mdOffset10;
+    }
+    @mixin mdOffset9 {
+      @include ms-mdoffset9;
+    }
+    @mixin mdOffset8 {
+      @include ms-mdOffset8;
+    }
+    @mixin mdOffset7 {
+      @include ms-mdOffset7;
+    }
+    @mixin mdOffset6 {
+      @include ms-mdOffset6;
+    }
+    @mixin mdOffset5 {
+      @include ms-mdOffset5;
+    }
+    @mixin mdOffset4 {
+      @include ms-mdOffset4;
+    }
+    @mixin mdOffset3 {
+      @include ms-mdOffset3;
+    }
+    @mixin mdOffset2 {
+      @include ms-mdOffset2;
+    }
+    @mixin mdOffset1 {
+      @include ms-mdOffset1;
+    }
+    @mixin mdOffset0 {
+      @include ms-mdOffset0;
+    }
+    
+    // Large screens
+    @mixin lg12 {
+      @include ms-lg12;
+    }
+    @mixin lg11 {
+      @include ms-lg11;
+    }
+    @mixin lg10 {
+      @include ms-lg10;
+    }
+    @mixin lg9 {
+      @include ms-lg9;
+    }
+    @mixin lg8 {
+      @include ms-lg8;
+    }
+    @mixin lg7 {
+      @include ms-lg7;
+    }
+    @mixin lg6 {
+      @include ms-lg6;
+    }
+    @mixin lg5 {
+      @include ms-lg5; 
+    }
+    @mixin lg4 {
+      @include ms-lg4;
+    }
+    @mixin lg3 {
+      @include ms-lg3;
+    }
+    @mixin lg2 {
+      @include ms-lg2;
+    }
+    @mixin lg1 {
+      @include ms-lg1;
+    }
+    @mixin lgPull12 {
+      @include ms-lgPull12;
+    }
+    @mixin lgPull11 {
+      @include ms-lgPull11;
+    }
+    @mixin lgPull10 {
+      @include ms-lgPull10;
+    }
+    @mixin lgPull9 {
+      @include ms-lgPull9;
+    }
+    @mixin lgPull8 {
+      @include ms-lgPull8;
+    }
+    @mixin lgPull7 {
+      @include ms-lgPull7;
+    }
+    @mixin lgPull6 {
+      @include ms-lgPull6;
+    }
+    @mixin lgPull5 {
+      @include ms-lgPull5;
+    }
+    @mixin lgPull4 {
+      @include ms-lgPull4;
+    }
+    @mixin lgPull3 {
+      @include ms-lgPull3;
+    }
+    @mixin lgPull2 {
+      @include ms-lgPull2;
+    }
+    @mixin lgPull1 {
+      @include ms-lgPull1;
+    }
+    @mixin lgPull0 {
+      @include ms-lgPull0;
+    }
+    @mixin lgPush12 {
+      @include ms-lgPush12;
+    }
+    @mixin lgPush11 {
+      @include ms-lgPush11;
+    }
+    @mixin lgPush10 {
+      @include ms-lgPush10;
+    }
+    @mixin lgPush9 {
+      @include ms-lgPush9;
+    }
+    @mixin lgPush8 {
+      @include ms-lgPush8;
+    }
+    @mixin lgPush7 {
+      @include ms-lgPush7;
+    }
+    @mixin lgPush6 {
+      @include ms-lgPush6;
+    }
+    @mixin lgPush5 {
+      @include ms-lgPush5;
+    }
+    @mixin lgPush4 {
+      @include ms-lgPush4;
+    }
+    @mixin lgPush3 {
+      @include ms-lgPush3;
+    }
+    @mixin lgPush2 {
+      @include ms-lgPush2;
+    }
+    @mixin lgPush1 {
+      @include ms-lgPush1;
+    }
+    @mixin lgPush0 {
+      @include ms-lgPush0;
+    }
+    
+    // Large Offset classes 0 ... 11
+    @mixin lgOffset11 {
+      @include ms-lgOffset11;
+    }
+    @mixin lgOffset10 {
+      @include ms-lgOffset10;
+    }
+    @mixin lgOffset9 {
+      @include ms-lgOffset9;
+    }
+    @mixin lgOffset8 {
+      @include ms-lgOffset8;
+    }
+    @mixin lgOffset7 {
+      @include ms-lgOffset7;
+    }
+    @mixin lgOffset6 {
+      @include ms-lgOffset6;
+    }
+    @mixin lgOffset5 {
+      @include ms-lgOffset5;
+    }
+    @mixin lgOffset4 {
+      @include ms-lgOffset4;
+    }
+    @mixin lgOffset3 {
+      @include ms-lgOffset3;
+    }
+    @mixin lgOffset2 {
+      @include ms-lgOffset2;
+    }
+    @mixin lgOffset1 {
+      @include ms-lgOffset1;
+    }
+    @mixin lgOffset0 {
+      @include ms-lgOffset0;
+    }
+    
+    // Extra Large Screens
+    @mixin xl12 {
+      @include ms-xl12;
+    }
+    @mixin xl11 {
+      @include ms-xl11;
+    }
+    @mixin xl10 {
+      @include ms-xl10;
+    }
+    @mixin xl9 {
+      @include ms-xl9;
+    }
+    @mixin xl8 {
+      @include ms-xl8;
+    }
+    @mixin xl7 {
+      @include ms-xl7;
+    }
+    @mixin xl6 {
+      @include ms-xl6;
+    }
+    @mixin xl5 {
+      @include ms-xl5;
+    }
+    @mixin xl4 {
+      @include ms-xl4;
+    }
+    @mixin xl3 {
+      @include ms-xl3;
+    }
+    @mixin xl2 {
+      @include ms-xl2;
+    }
+    @mixin xl1 {
+      @include ms-xl1;
+    }
+    @mixin xlPull12 {
+      @include ms-xlPull12;
+    }
+    @mixin xlPull11 {
+      @include ms-xlPull11;
+    }
+    @mixin xlPull10 {
+      @include ms-xlPull10;
+    }
+    @mixin xlPull9 {
+      @include ms-xlPull9;
+    }
+    @mixin xlPull8 {
+      @include ms-xlPull8;
+    }
+    @mixin xlPull7 {
+      @include ms-xlPull7;
+    }
+    @mixin xlPull6 {
+      @include ms-xlPull6;
+    }
+    @mixin xlPull5 {
+      @include ms-xlPull5;
+    }
+    @mixin xlPull4 {
+      @include ms-xlPull4;
+    }
+    @mixin xlPull3 {
+      @include ms-xlPull3;
+    }
+    @mixin xlPull2 {
+      @include ms-xlPull2;
+    }
+    @mixin xlPull1 {
+      @include ms-xlPull1;
+    }
+    @mixin xlPull0 {
+      @include ms-xlPull0;
+    }
+    @mixin xlPush12 {
+      @include ms-xlPush12;
+    }
+    @mixin xlPush11 {
+      @include ms-xlPush11;
+    }
+    @mixin xlPush10 {
+      @include ms-xlPush10;
+    }
+    @mixin xlPush9 {
+      @include ms-xlPush9;
+    }
+    @mixin xlPush8 {
+      @include ms-xlPush8;
+    }
+    @mixin xlPush7 {
+      @include ms-xlPush7;
+    }
+    @mixin xlPush6 {
+      @include ms-xlPush6;
+    }
+    @mixin xlPush5 {
+      @include ms-xlPush5;
+    }
+    @mixin xlPush4 {
+      @include ms-xlPush4;
+    }
+    @mixin xlPush3 {
+      @include ms-xlPush3;
+    }
+    @mixin xlPush2 {
+      @include ms-xlPush2;
+    }
+    @mixin xlPush1 {
+      @include ms-xlPush1;
+    }
+    @mixin xlPush0 {
+      @include ms-xlPush0;
+    }
+    
+    // Large Offset classes 0 ... 11
+    @mixin xlOffset11 {
+      @include ms-xlOffset11;
+    }
+    @mixin xlOffset10 {
+      @include ms-xlOffset10;
+    }
+    @mixin xlOffset9 {
+      @include ms-xlOffset9;
+    }
+    @mixin xlOffset8 {
+      @include ms-xlOffset8;
+    }
+    @mixin xlOffset7 {
+      @include ms-xlOffset7;
+    }
+    @mixin xlOffset6 {
+      @include ms-xlOffset6;
+    }
+    @mixin xlOffset5 {
+      @include ms-xlOffset5;
+    }
+    @mixin xlOffset4 {
+      @include ms-xlOffset4;
+    }
+    @mixin xlOffset3 {
+      @include ms-xlOffset3;
+    }
+    @mixin xlOffset2 {
+      @include ms-xlOffset2;
+    }
+    @mixin xlOffset1 {
+      @include ms-xlOffset1
+    }
+    @mixin xlOffset0 {
+      @include ms-xlOffset0;
+    }
+    
+    // XXL Screens
+    @mixin xxl12 {
+      @include ms-xxl12;
+    }
+    @mixin xxl11 {
+      @include ms-xxl11;
+    }
+    @mixin xxl10 {
+      @include ms-xxl10;
+    }
+    @mixin xxl9 {
+      @include ms-xxl9;
+    }
+    @mixin xxl8 {
+      @include ms-xxl8;
+    }
+    @mixin xxl7 {
+      @include ms-xxl7;
+    }
+    @mixin xxl6 {
+      @include ms-xxl6;
+    }
+    @mixin xxl5 {
+      @include ms-xxl5;
+    }
+    @mixin xxl4 {
+      @include ms-xxl4;
+    }
+    @mixin xxl3 {
+      @include ms-xxl3;
+    }
+    @mixin xxl2 {
+      @include ms-xxl2;
+    }
+    @mixin xxl1 {
+      @include ms-xxl1;
+    }
+    @mixin xxlPull12 {
+      @include ms-xxlPull12;
+    }
+    @mixin xxlPull11 {
+      @include ms-xxlPull11;
+    }
+    @mixin xxlPull10 {
+      @include ms-xxlPull10;
+    }
+    @mixin xxlPull9 {
+      @include ms-xxlPull9;
+    }
+    @mixin xxlPull8 {
+      @include ms-xxlPull8;
+    }
+    @mixin xxlPull7 {
+      @include ms-xxlPull7;
+    }
+    @mixin xxlPull6 {
+      @include ms-xxlPull6;
+    }
+    @mixin xxlPull5 {
+      @include ms-xxlPull5;
+    }
+    @mixin xxlPull4 {
+      @include ms-xxlPull4;
+    }
+    @mixin xxlPull3 {
+      @include ms-xxlPull3;
+    }
+    @mixin xxlPull2 {
+      @include ms-xxlPull2;
+    }
+    @mixin xxlPull1 {
+      @include ms-xxlPull1;
+    }
+    @mixin xxlPull0 {
+      @include ms-xxlPull0;
+    }
+    @mixin xxlPush12 {
+      @include ms-xxlPush12;
+    }
+    @mixin xxlPush11 {
+      @include ms-xxlPush11;
+    }
+    @mixin xxlPush10 {
+      @include ms-xxlPush10;
+    }
+    @mixin xxlPush9 {
+      @include ms-xxlPush9;
+    }
+    @mixin xxlPush8 {
+      @include ms-xxlPush8;
+    }
+    @mixin xxlPush7 {
+      @include ms-xxlPush7;
+    }
+    @mixin xxlPush6 {
+      @include ms-xxlPush6;
+    }
+    @mixin xxlPush5 {
+      @include ms-xxlPush5;
+    }
+    @mixin xxlPush4 {
+      @include ms-xxlPush4;
+    }
+    @mixin xxlPush3 {
+      @include ms-xxlPush3;
+    }
+    @mixin xxlPush2 {
+      @include ms-xxlPush2; 
+    }
+    @mixin xxlPush1 {
+      @include ms-xxlPush1;
+    }
+    @mixin xxlPush0 {
+      @include ms-xxlPush0;
+    }
+    
+    // Extra extra large Offset classes 0 ... 11
+    @mixin xxlOffset11 {
+      @include ms-xxlOffset11;
+    }
+    @mixin xxlOffset10 {
+      @include ms-xxlOffset10;
+    }
+    @mixin xxlOffset9 {
+      @include ms-xxlOffset9;
+    }
+    @mixin xxlOffset8 {
+      @include ms-xxlOffset8;
+    }
+    @mixin xxlOffset7 {
+      @include ms-xxlOffset7;
+    }
+    @mixin xxlOffset6 {
+      @include ms-xxlOffset6;
+    }
+    @mixin xxlOffset5 {
+      @include ms-xxlOffset5;
+    }
+    @mixin xxlOffset4 {
+      @include ms-xxlOffset4;
+    }
+    @mixin xxlOffset3 {
+      @include ms-xxlOffset3;
+    }
+    @mixin xxlOffset2 {
+      @include ms-xxlOffset2;
+    }
+    @mixin xxlOffset1 {
+      @include ms-xxlOffset1;
+    }
+    @mixin xxlOffset0 {
+      @include ms-xxlOffset0;
+    }
+    
+    // Extra extra extra large screens
+    @mixin xxxl12 {
+      @include ms-xxxl12;
+    }
+    @mixin xxxl11 {
+      @include ms-xxxl11;
+    }
+    @mixin xxxl10 {
+      @include ms-xxxl10;
+    }
+    @mixin xxxl9 {
+      @include ms-xxxl9;
+    }
+    @mixin xxxl8 {
+      @include ms-xxxl8;
+    }
+    @mixin xxxl7 {
+      @include ms-xxxl7;
+    }
+    @mixin xxxl6 {
+      @include ms-xxxl6;
+    }
+    @mixin xxxl5 {
+      @include ms-xxxl5;
+    }
+    @mixin xxxl4 {
+      @include ms-xxxl4;
+    }
+    @mixin xxxl3 {
+      @include ms-xxxl3;
+    }
+    @mixin xxxl2 {
+      @include ms-xxxl2;
+    }
+    @mixin xxxl1 {
+      @include ms-xxxl1;
+    }
+    @mixin xxxlPull12 {
+      @include ms-xxxlPull12;
+    }
+    @mixin xxxlPull11 {
+      @include ms-xxxlPull11;
+    }
+    @mixin xxxlPull10 {
+      @include ms-xxxlPull10;
+    }
+    @mixin xxxlPull9 {
+      @include ms-xxxlPull9;
+    }
+    @mixin xxxlPull8 {
+      @include ms-xxxlPull8;
+    }
+    @mixin xxxlPull7 {
+      @include ms-xxxlPull7;
+    }
+    @mixin xxxlPull6 {
+      @include ms-xxxlPull6;
+    }
+    @mixin xxxlPull5 {
+      @include ms-xxxlPull5;
+    }
+    @mixin xxxlPull4 {
+      @include ms-xxxlPull4;
+    }
+    @mixin xxxlPull3 {
+      @include ms-xxxlPull3;
+    }
+    @mixin xxxlPull2 {
+      @include ms-xxxlPull2;
+    }
+    @mixin xxxlPull1 {
+      @include ms-xxxlPull1;
+    }
+    @mixin xxxlPull0 {
+      @include ms-xxxlPull0;
+    }
+    @mixin xxxlPush12 {
+      @include ms-xxxlPush12;
+    }
+    @mixin xxxlPush11 {
+      @include ms-xxxlPush11;
+    }
+    @mixin xxxlPush10 {
+      @include ms-xxxlPush10;
+    }
+    @mixin xxxlPush9 {
+      @include ms-xxxlPush9;
+    }
+    @mixin xxxlPush8 {
+      @include ms-xxxlPush8;
+    }
+    @mixin xxxlPush7 {
+      @include ms-xxxlPush7;
+    }
+    @mixin xxxlPush6 {
+      @include ms-xxxlPush6;
+    }
+    @mixin xxxlPush5 {
+      @include ms-xxxlPush5;
+    }
+    @mixin xxxlPush4 {
+      @include ms-xxxlPush4;
+    }
+    @mixin xxxlPush3 {
+      @include ms-xxxlPush3;
+    }
+    @mixin xxxlPush2 {
+      @include ms-xxxlPush2;
+    }
+    @mixin xxxlPush1 {
+      @include ms-xxxlPush1;
+    }
+    @mixin xxxlPush0 {
+      @include ms-xxxlPush0;
+    }
+    
+    // Extra extra extra large Offset classes 0 ... 11
+    @mixin xxxlOffset11 {
+      @include ms-xxxlOffset11;
+    }
+    @mixin xxxlOffset10 {
+      @include ms-xxxlOffset10;
+    }
+    @mixin xxxlOffset9 {
+      @include ms-xxxlOffset9;
+    }
+    @mixin xxxlOffset8 {
+      @include ms-xxxlOffset8;
+    }
+    @mixin xxxlOffset7 {
+      @include ms-xxxlOffset7;
+    }
+    @mixin xxxlOffset6 {
+      @include ms-xxxlOffset6;
+    }
+    @mixin xxxlOffset5 {
+      @include ms-xxxlOffset5;
+    }
+    @mixin xxxlOffset4 {
+      @include ms-xxxlOffset4;
+    }
+    @mixin xxxlOffset3 {
+      @include ms-xxxlOffset3;
+    }
+    @mixin xxxlOffset2 {
+      @include ms-xxxlOffset2;
+    }
+    @mixin xxxlOffset1 {
+      @include ms-xxxlOffset1;
+    }
+    @mixin xxxlOffset0 {
+      @include ms-xxxlOffset0;
+    }
+    
+    // Min-width media queries.
+    @mixin screen-md-up {
+      @include ms-screen-md-up;
+    }
+    
+    @mixin screen-lg-up {
+      @include ms-screen-lg-up;
+    }
+    
+    @mixin screen-xl-up {
+      @include ms-screen-xl-up;
+    }
+    
+    @mixin screen-xxl-up {
+      @include ms-screen-xxl-up;
+    }
+    
+    @mixin screen-xxxl-up {
+      @include ms-screen-xxxl-up;
+    }
+    
+    // Max-width media queries.
+    @mixin screen-sm-down {
+      @include ms-screen-sm-down;
+    }
+    
+    @mixin screen-md-down {
+      @include ms-screen-md-down;
+    }
+    
+    @mixin screen-lg-down {
+      @include ms-screen-lg-down;
+    }
+    
+    @mixin screen-xl-down {
+      @include ms-screen-xl-down;
+    }
+    
+    @mixin screen-xxl-down {
+      @include ms-screen-xxl-down;
+    }
+  
+  

@@ -1,0 +1,189 @@
+// @mixin hover {
+//     // TODO: re-enable along with mq4-hover-shim
+//     //  @if $enable-hover-media-query {
+//     //    // See Media Queries Level 4: https://drafts.csswg.org/mediaqueries/#hover
+//     //    // Currently shimmed by https://github.com/twbs/mq4-hover-shim
+//     //    @media (hover: hover) {
+//     //      &:hover { @content }
+//     //    }
+//     //  }
+//     //  @else {
+//     &:hover {
+//         @content
+//     }
+//      };
+
+
+// @mixin hover-focus {
+//     @if $enable-hover-media-query {
+//         &:focus {
+//             @content
+//         };
+
+//         @include hover {
+//             @content
+//         };
+//     }
+//     @else {
+//         &:focus,
+//         &:hover {
+//             @content
+//         }
+//     }
+// };
+
+// @mixin plain-hover-focus {
+//     @if $enable-hover-media-query {
+//         &,
+//         &:focus {
+//             @content
+//         };
+
+//         @include hover {
+//             @content
+//         };
+//     }
+//     @else {
+//         &,
+//         &:focus,
+//         &:hover {
+//             @content
+//         }
+//     }
+// };
+
+// @mixin hover-focus-active {
+//     @if $enable-hover-media-query {
+//         &:focus,
+//         &:active {
+//             @content
+//         };
+
+//         @include hover {
+//             @content
+//         };
+//     }
+//     @else {
+//         &:focus,
+//         &:active,
+//         &:hover {
+//             @content
+//         };
+//     }
+// };
+
+// @mixin hover($parent: false) {
+//     @if($parent) {
+//         &, &:hover {
+//             @content
+//         };
+//     }
+//     @else {
+//         &:hover {
+//             @content
+//         }
+//     }
+// };
+
+// @mixin focus($parent: false) {
+//     @if($parent) {
+//         &, &:focus {
+//             @content
+//         };
+//     }
+//     @else {
+//         &:focus {
+//             @content
+//         };
+//     }
+// };
+
+// @mixin active($parent: false) {
+//     @if($parent) {
+//         &, &:active {
+//             @content
+//         };
+//     }
+//     @else {
+//         &:active {
+//             @content
+//         };
+//     }
+// };
+
+// @mixin hover-focus ($parent: false,$individual: false) {
+//     @if($individual) {
+//         @include hover($parent);
+//         @include focus($parent);
+//     }
+//     @else {
+//         @if($parent) {
+//             &, &:hover, &:focus {
+//                 @content
+//             };
+//         }
+//         @else {
+//             &:hover, &:focus {
+//                 @content
+//             };
+//         }
+//     }
+// };
+
+// @mixin hover-active ($parent: false,$individual: false) {
+//     @if($individual) {
+//         @include hover($parent);
+//         @include active($parent);
+//     }
+//     @else {
+//         @if($parent) {
+//             &, &:hover, &:active {
+//                 @content
+//             };
+//         }
+//         @else {
+//             &:hover, &:active {
+//                 @content
+//             };
+//         }
+//     }
+// };
+
+// @mixin focus-active ($parent: false,$individual: false) {
+//     @if($individual) {
+//         @include focus($parent);
+//         @include active($parent);
+//     }
+//     @else {
+//         @if($parent) {
+//             &, &:focus, &:active {
+//                 @content
+//             };
+//         }
+//         @else {
+//             &:focus, &:active {
+//                 @content
+//             };
+//         }
+//     }
+// };
+
+// @mixin hover-focus-active($parent: false,$individual: false) {
+//     @if($individual) {
+//         @include hover($parent);
+//         @include focus($parent);
+//         @include active($parent);
+//     }
+//     @else {
+//         @if($parent) {
+//             &, &:hover, &:focus, &:active {
+//                 @content
+//             };
+//         }
+//         @else {
+//             &:hover, &:focus, &:active {
+//                 @content
+//             };
+//         }
+//     }
+// };

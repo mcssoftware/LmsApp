@@ -1,0 +1,13 @@
+@import '../../../../sass/LmsCore';
+.resurrectbillsection {
+  :global .ms-Dropdown-container {
+    padding: 0 8px;
+  }
+  .container {
+  @include container(1);
+  }
+  .inlineflex {
+  @include inlineFlex;
+  }
+  @include grids;
+}

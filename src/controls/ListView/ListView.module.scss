@@ -1,0 +1,48 @@
+@import '../../sass/LmsCore';
+.listview {
+  .row {
+    @include ms-Grid-row;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  
+  @include noDoubleBorderInput;
+
+  .searchColumn {
+    @include ms-Grid-col;
+    @include ms-lg3;
+    @include ms-md4;
+    @include ms-sm6;
+  }
+  .searchBox {
+    :global .ms-TextField-wrapper {
+      .ms-Label {
+        font-size: 15px;
+        float: left;
+        margin-right: 15px;
+        margin-left: 10px;
+      }
+    }
+  }
+  :global .ms-SelectionZone {
+    overflow-y: auto;
+    @media screen and (max-width: 575px) {
+      max-height: 90vh;
+    }
+  }
+  .viewPort30 {
+    :global .ms-SelectionZone {
+    max-height: 30vh;
+    }
+  }
+  .viewPort60 {
+    :global .ms-SelectionZone {
+    max-height: 60vh;
+    }
+  }
+  .viewPort90 {
+    :global .ms-SelectionZone {
+    max-height: 90vh;
+    }
+  }
+}

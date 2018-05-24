@@ -1,0 +1,127 @@
+@mixin tableResponsive{
+.table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  // makes the table cells not expand with the content, keeping the table cells at a fixed size
+  .table--fixed {
+    table-layout: fixed;
+  }
+  
+  .table tr,
+  .table-row {
+    display: table-row;
+    line-height: 30px;
+    font-family: fontWeight-semilight;
+    font-size: $ms-font-size-s;
+    color: $ms-color-neutralPrimary;
+  
+    &:hover {
+      background-color: $ms-color-neutralLighter;
+      cursor: pointer;
+      outline: 1px solid transparent;
+    }
+  
+    // Rows can be selected.
+    &.is-selected {
+      background-color: $ms-color-themeLight;
+  
+      // A checkmark in a selected row.
+      .ms-Table-rowCheck {
+        background-color: $ms-color-themePrimary;
+  
+        // Hide the checkbox.
+        &:before {
+          display: none;
+        }
+  
+        // But show the mark.
+        &:after {
+          @include ms-Icon;
+          content: '\e041';
+          color: $ms-color-white;
+          font-size: 12px;
+          position: absolute;
+          left: 4px;
+          top: 9px;
+        }
+      }
+    }
+  }
+  
+  .table th,
+  .table td,
+  .table-cell {
+    display: table-cell;
+    padding: 0 10px;
+  }
+  
+  // Style the first row as a header.
+  .table thead th,
+  .table-head {
+    @include fontWeight-semiLight;
+    @include fontSize-xs;
+    @include color-neutralLight;
+  }
+  
+  .table thead,
+  .table-head {
+    td,
+    th,
+    .table-cell,
+    .table-rowCheck {
+      font-weight: normal;
+      text-align: left;
+      border-bottom: 1px solid $ms-color-neutralLight;
+    }
+  
+    .table-rowCheck:after {
+      @include ms-Icon;
+      content: '\e041';
+      color: $ms-color-neutralTertiary;
+      font-size: 12px;
+      position: absolute;
+      left: 4px;
+      top: 9px;
+    }
+  }
+  
+  // On selectable tables, each row has a checkbox.
+  .table-rowCheck {
+    display: table-cell;
+    width: 20px;
+    position: relative;
+    padding: 0;
+  
+    // Empty checkbox.
+    &:before {
+      border: 1px solid $ms-color-neutralTertiary;
+      content: '';
+      display: block;
+      height: 14px;
+      left: 2px;
+      position: absolute;
+      top: 6px;
+      width: 14px;
+    }
+  }
+  
+  // All high contrast styling rules
+  @media screen and (-ms-high-contrast: active) {
+    .table-row {
+      // Rows can be selected.
+      &.is-selected {
+        // A checkmark in a selected row.
+        .table-rowCheck {
+          background: none;
+          // Show the checkbox.
+          &:before {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

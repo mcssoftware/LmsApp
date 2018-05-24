@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.4.0",
+    "libraryName": "mcs-lms",
+    "libraryId": "6ff8c5e9-3307-4c3c-8397-e2f3a058585d",
+    "environment": "spo"
+  }
+}

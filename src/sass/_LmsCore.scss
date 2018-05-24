@@ -1,0 +1,21 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+@import './mixins/Grid.mixin';
+@import './mixins/Responsive.mixin';
+@import './mixins/Button.mixin';
+@import './mixins/Font.mixin';
+@import './mixins/General.mixin';
+@import './mixins/Headings.mixin';
+@import './mixins/Label.mixin';
+@import './mixins/Textbox.mixin';
+@import './mixins/Radiobutton.mixin';
+@import './mixins/Form.mixin';
+@import './mixins/theming.module';
+//@import './mixins/Table.mixin';
+:global div[role="banner"],
+:global div[data-automation-id="pageHeader"]{
+  display: none;
+}
+
+:global .CanvasZone{
+  max-width: 100% !important;
+}
